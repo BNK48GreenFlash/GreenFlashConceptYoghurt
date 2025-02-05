@@ -1,0 +1,41 @@
+body {
+    background-image: url('https://i.imgur.com/oYSLE5W.jpeg'); /* ใช้ลิงก์รูปที่อัปโหลด */
+    background-size: 100% auto;  /* ปรับให้กว้างเต็ม 100% และความสูงปรับอัตโนมัติ */
+    background-repeat: no-repeat;
+    background-position: top center; /* ให้ภาพเริ่มจากด้านบน */
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* ปรับสำหรับมือถือ */
+@media (max-width: 768px) {
+    body {
+        background-size: cover; /* ปรับให้เต็มหน้าจอมือถือ */
+        background-position: center; 
+        background-repeat: no-repeat;
+    }
+}
+
+/* ปรับขนาดปุ่มให้เหมาะสม */
+button {
+    background-color: #1da1f2;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px; /* ลดระยะห่างจากล่างจอ */
+    left: 50%;
+    transform: translateX(-50%);
+}
